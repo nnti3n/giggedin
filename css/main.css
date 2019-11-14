@@ -1,213 +1,256 @@
 :root {
-    --primary-color: #ff4a32;
+  --primary-color: #ff4a32;
 }
 
 @font-face {
-    font-family: HelveticaNeueLTStd-Bd;
-    src: url('../fonts/HelveticaNeueLTStd-Bd.otf');
+  font-family: HelveticaNeueLTStd-Bd;
+  src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
 }
 @font-face {
-    font-family: HelveticaNeueLTStd-Blk;
-    src: url('../fonts/HelveticaNeueLTStd-Blk.otf');
+  font-family: HelveticaNeueLTStd-Blk;
+  src: url("../fonts/HelveticaNeueLTStd-Blk.otf");
 }
 @font-face {
-    font-family: HelveticaNeueLTStd-Md;
-    src: url('../fonts/HelveticaNeueLTStd-Md.otf');
+  font-family: HelveticaNeueLTStd-Md;
+  src: url("../fonts/HelveticaNeueLTStd-Md.otf");
 }
 @font-face {
-    font-family: HelveticaNeueLTStd-Hv;
-    src: url('../fonts/HelveticaNeueLTStd-Hv.otf');
+  font-family: HelveticaNeueLTStd-Hv;
+  src: url("../fonts/HelveticaNeueLTStd-Hv.otf");
 }
 @font-face {
-    font-family: HelveticaNeueLTStd-Roman;
-    src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+  font-family: HelveticaNeueLTStd-Roman;
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf");
 }
 
 @font-face {
-    font-family: SFUIDisplay;
-    src: url('../fonts/SFUIDisplay.otf');
+  font-family: SFUIDisplay;
+  src: url("../fonts/SFUIDisplay.otf");
+}
+
+.pl-19 {
+  padding-left: 19;
 }
 
 html {
-    font-family: HelveticaNeueLTStd-Bd, Helvetica, sans-serif;
+  font-family: HelveticaNeueLTStd-Bd, Helvetica, sans-serif;
 }
 
 a:hover {
-    text-decoration: none;
-    opacity: 0.7;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pl-19 {
+  padding-left: 19px;
 }
 
 .max-width {
-    max-width: 988px;
+  max-width: 988px;
+  margin: auto;
 }
 
 .header {
-    position: relative;
-    height: 245px;
-    background-color: var(--primary-color);
-    padding: 43px 30px 0 30px;
-    z-index: -1;
+  position: relative;
+  height: 245px;
+  background-color: var(--primary-color);
+  padding: 43px 30px 0 30px;
 }
 
 .menu {
-    list-style: none;
-    color: white;
-    margin: auto;
+  list-style: none;
+  color: white;
+  margin: auto;
 }
 
 .menu a {
-    display: inline;
-    font-family: HelveticaNeueLTStd-Bd, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: #ffffff;
-    margin-right: 35px;
+  display: inline;
+  font-family: HelveticaNeueLTStd-Bd, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 35px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1450px) {
+  .header {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 320px;
+  }
+  .menu a {
+    display: block;
+    text-align: left;
+    margin-bottom: 12px;
+  }
 }
 
 .main-logo {
-    position: absolute;
-    left: 30px;
-    top: 43px;
+  position: absolute;
+  left: 30px;
+  top: 43px;
 }
 
 .user {
-    position: absolute;
-    right: 30px;
-    top: 43px;
-    color: white;
-    font-family: HelveticaNeueLTStd-Bd;
-    font-size: 11px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: #ffffff;
+  position: absolute;
+  right: 30px;
+  top: 43px;
+  color: white;
+  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .user span {
-    display:inline-block;
-    margin-bottom: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .user-logo {
-    margin-left: 26px;
-    display:inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
+  margin-left: 26px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  vertical-align: bottom;
 }
 
 .rsvp {
-    color: white;
-    font-family: SFUIDisplay;
-    font-size: 11px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    color: #ffffff;
-    margin-top: -89px;
-    margin-bottom: 15px;
-    height: 50px;
+  color: white;
+  font-family: SFUIDisplay;
+  font-size: 11px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+  margin-top: -89px;
+  margin-bottom: 15px;
+  height: 50px;
+  position: relative;
 }
 
 .rsvp-title {
-    color: white;
-    text-shadow: 0 7px 8px rgba(226, 37, 3, 0.76);
-    font-family: HelveticaNeueLTStd-Blk,  Helvetica, sans-serif;
-    font-size: 38px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.05;
-    letter-spacing: 1.03px;
-    margin-right: 10px;
+  color: white;
+  text-shadow: 0 7px 8px rgba(226, 37, 3, 0.76);
+  font-family: HelveticaNeueLTStd-Blk, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  letter-spacing: 1.03px;
+  margin-right: 10px;
 }
 
 .rectangle {
-    border-radius: 3px;
-    background-color: white;
-    box-shadow: 0 4px 11px 0 rgba(223, 26, 0, 0.12);
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 4px 11px 0 rgba(223, 26, 0, 0.12);
+  margin-bottom: 53px;
+  position: relative;
 }
 
 .event {
-    display: flex;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .event {
+    flex-flow: column;
+  }
+  .rectangle {
+    box-shadow: none;
+  }
 }
 
 .event-detail {
-    padding: 21px 20px;
-    border-bottom: solid 1px #ffeaea;
+  padding: 21px 20px;
+  border-bottom: solid 1px #ffeaea;
 }
 
 .event-credit {
-    font-family: SFUIDisplay;
-    font-size: 11px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    color: #1a0f0f;
-    margin-bottom: 14px;
+  font-family: SFUIDisplay;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  color: #1a0f0f;
+  margin-bottom: 14px;
 }
 
 .event-credit span {
-    letter-spacing: 0.46px;
-    color: #ff4a32;
+  letter-spacing: 0.46px;
+  color: #ff4a32;
 }
 
 .event-title {
-    font-family: SFUIDisplay;
-    font-size: 15px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: #1a0f0f;
+  font-family: SFUIDisplay;
+  font-size: 15px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #1a0f0f;
 }
 
 .event-address {
-    font-family: HelveticaNeueLTStd-Roman;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.31;
-    letter-spacing: 0.34px;
-    text-align: justify;
-    color: #1a0f0f;
+  font-family: HelveticaNeueLTStd-Roman;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 0.34px;
+  text-align: justify;
+  color: #1a0f0f;
 }
 
 .event-genre {
-    font-family: HelveticaNeueLTStd-Md;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.31;
-    letter-spacing: 0.34px;
-    text-align: justify;
-    color: #1a0f0f;
-    margin-bottom: 18px;
+  font-family: HelveticaNeueLTStd-Md;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: 0.34px;
+  text-align: justify;
+  color: #1a0f0f;
+  margin-bottom: 18px;
 }
 
 .event-tickets {
-    width: 219px;
-    height: 40px;
-    border-radius: 3px;
-    border: solid 1px #ffeaea;
-    font-family: HelveticaNeueLTStd-Bd;
-    font-size: 11px;
+  width: 219px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1px #ffeaea;
+  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 11px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -219,52 +262,58 @@ a:hover {
 }
 
 .event-tickets option {
-    font-family: HelveticaNeueLTStd-Bd;
-    font-size: 11px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: #1a0f0f;
+  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #1a0f0f;
 }
 
 .event-tickets option span {
-    color: #ff4a32;
+  color: #ff4a32;
 }
 
 .checkout {
-    padding: 19px 0;
-    background-image: url("../img/rectangle@3x.png");
-    border-left: 1px solid #ffeaea;
+  padding: 19px 0;
+  background-image: url("../img/rectangle@3x.png");
+  border-left: 1px solid #ffeaea;
+  margin-left: -15px;
 }
 
-.checkout-title {
-    font-family: HelveticaNeueLTStd-Blk;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.1;
-    letter-spacing: 0.33px;
-    color: #1a0f0f;
-    padding-left: 19px;
+@media screen and (max-width: 600px) {
+  .checkout {
+    margin-left: 0;
+  }
+}
+
+.big-title {
+  font-family: HelveticaNeueLTStd-Blk;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: 0.33px;
+  color: #1a0f0f;
 }
 
 .checkout-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 19px 24px 19px;
-    border-bottom: solid 1px #ffeaea;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 19px 24px 19px;
+  border-bottom: solid 1px #ffeaea;
 }
 
 .checkout-item.active {
-    background-color: #ffeaea;
+  background-color: #ffeaea;
 }
 
 .checkout-item .name {
-    font-family: HelveticaNeueLTStd-Md;
+  font-family: HelveticaNeueLTStd-Md;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -288,7 +337,7 @@ a:hover {
 }
 
 .value .type {
-    width: 120px;
+  width: 120px;
   height: 14px;
   font-family: SFUIDisplay;
   font-size: 12px;
@@ -302,9 +351,9 @@ a:hover {
 }
 
 .checkout-total {
-    display: flex;
-    justify-content: space-between;
-    font-family: HelveticaNeueLTStd-Hv;
+  display: flex;
+  justify-content: space-between;
+  font-family: HelveticaNeueLTStd-Hv;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -317,7 +366,7 @@ a:hover {
 }
 
 .checkout-submit {
-    font-family: HelveticaNeueLTStd-Bd;
+  font-family: HelveticaNeueLTStd-Bd;
   font-size: 11px;
   font-weight: normal;
   font-stretch: normal;
@@ -332,27 +381,27 @@ a:hover {
   box-shadow: 0 5px 20px 0 rgba(223, 26, 0, 0.17);
   background-color: #ff4a32;
   display: block;
-    margin: auto;
-    margin-top: 23px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+  margin: auto;
+  margin-top: 23px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .checkout-submit:hover {
-    background-color: rgba(255, 74, 50, 0.7);
+  background-color: rgba(255, 74, 50, 0.7);
 }
 
 .checkout-submit:focus {
-    outline: none;
+  outline: none;
 }
 
 .checkout-promo {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .checkout-promo a {
-    font-family: HelveticaNeueLTStd-Bd;
+  font-family: HelveticaNeueLTStd-Bd;
   font-size: 11px;
   font-weight: normal;
   font-stretch: normal;
@@ -366,21 +415,21 @@ a:hover {
 }
 
 .checkout-promo a:hover {
-    color: #ff4a32;
+  color: #ff4a32;
 }
 
 .member {
-    padding: 30px 20px 32px 20px ;
+  padding: 30px 20px 32px 20px;
 }
 
 .member-bar {
-    width: 60px;
-    height: 4px;
-    background-color: #ff4a32;
+  width: 60px;
+  height: 4px;
+  background-color: #ff4a32;
 }
 
 .member-title {
-    font-family: HelveticaNeueLTStd-Blk;
+  font-family: HelveticaNeueLTStd-Blk;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -393,48 +442,37 @@ a:hover {
 }
 
 .package {
-    padding: 19px;
-    border-radius: 3px;
+  padding: 19px;
+  border-radius: 3px;
   border: solid 1px #ffeaea;
-  height: 187px;
   cursor: pointer;
+  margin-bottom: 27px;
 }
 
 .package:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .package.active {
-    background-color: #ff4a32;
-    border-color: #ff4a32;
+  background-color: #ff4a32;
+  border-color: #ff4a32;
 }
 
 .package .bar {
-    width: 26px;
+  width: 26px;
   height: 3.3px;
   background-color: #302f2f;
   margin-bottom: 10.5px;
+  margin-top: 32px;
 }
 
-.package .can {
-    font-family: SFUIDisplay;
-  font-size: 12px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #aaaaaa;
-  margin-bottom: 32px;
-}
-
-.package.active .can {
-    color: white;
-    opacity: 0.6;
+.package.active .text-gray {
+  color: white;
+  opacity: 0.6;
 }
 
 .package .credit {
-    font-family: SFUIDisplay;
+  font-family: SFUIDisplay;
   font-size: 14px;
   font-weight: 900;
   font-stretch: normal;
@@ -446,11 +484,11 @@ a:hover {
 }
 
 .package.active .credit {
-    color: white;
+  color: white;
 }
 
 .credit span {
-    font-family: SFUIDisplay;
+  font-family: SFUIDisplay;
   font-size: 24px;
   font-weight: 900;
   font-stretch: normal;
@@ -461,39 +499,39 @@ a:hover {
   margin-right: 4px;
 }
 
-.package.active .credit span{
-    color: white;
+.package.active .credit span {
+  color: white;
 }
 
 .less-margin {
-    padding-left: 8px;
-    padding-right: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .package .value {
-    font-family: SFUIDisplay;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.62px;
-    color: #302f2f;
+  font-family: SFUIDisplay;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.62px;
+  color: #302f2f;
 }
-.package.active .value{
-    color: white;
+.package.active .value {
+  color: white;
 }
 
-.package.active .value span{
-    color: white;
+.package.active .value span {
+  color: white;
 }
 
 .package .value span {
-    color: #ff4a32;
+  color: #ff4a32;
 }
 
-.package .type{
-    font-family: SFUIDisplay;
+.package .type {
+  font-family: SFUIDisplay;
   font-size: 13px;
   font-weight: 600;
   font-stretch: normal;
@@ -504,13 +542,10 @@ a:hover {
 }
 
 .package.active .type {
-    color: white;
+  color: white;
 }
 
 .learn-more {
-    margin-top: 27px;
-    width: 520px;
-  height: 15px;
   font-family: SFUIDisplay;
   font-size: 13px;
   font-weight: 500;
@@ -522,5 +557,222 @@ a:hover {
 }
 
 .learn-more span {
-    color: #ff4a32;
+  color: #ff4a32;
+}
+
+.benefit {
+  margin-bottom: 58px;
+}
+
+.benefit-list {
+  margin-top: 26px;
+}
+
+.perk {
+  margin-bottom: 30px;
+}
+
+.text-sub-title {
+  font-family: HelveticaNeueLTStd-Md;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: 0.47px;
+  color: #1a0f0f;
+  margin-bottom: 1px;
+}
+
+.text-detail {
+  font-family: HelveticaNeueLTStd-Roman;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.41px;
+  color: #1a0f0f;
+}
+
+.text-gray {
+  font-family: SFUIDisplay;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #aaaaaa;
+}
+
+.list-faq {
+  margin-top: 12px;
+}
+
+.faq .text-sub-title {
+  margin-bottom: 10px;
+}
+
+.faq {
+  border-bottom: solid 1px #ffeaea;
+}
+
+.faq label {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq label img {
+  height: 16px;
+  width: auto;
+}
+
+.faq .text-detail {
+  display: none;
+  padding-bottom: 8px;
+  max-width: 769px;
+}
+
+/*hide the inputs*/
+input {
+  display: none;
+}
+
+/*show the second levele menu of the selected voice*/
+input:checked ~ .text-detail {
+  display: block;
+}
+
+input:checked ~ label img {
+  transform: rotate(180deg);
+}
+.view-faq {
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+.view-faq a {
+  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #ff4a32;
+}
+
+.stripe-bar {
+  width: 100%;
+  height: 8px;
+}
+
+.logo-footer {
+  width: 219px;
+  height: 192px;
+}
+
+footer {
+  padding-bottom: 46px;
+}
+
+footer ul {
+  padding-top: 37px;
+}
+
+footer li a {
+  font-family: HelveticaNeueLTStd-Md;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.22px;
+  color: #ff4a32;
+}
+
+footer a:hover {
+  color: #ff4a32;
+  opacity: 0.7;
+}
+
+footer li:first-child h4 {
+  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  color: #1a0f0f;
+  margin-bottom: 8px;
+}
+
+footer .fab {
+  margin-right: 30px;
+  width: auto;
+  font-size: 23px;
+  color: #ff4a32;
+}
+
+.get-app a div {
+  opacity: 0.26;
+  font-family: HelveticaNeueLTStd-Md;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  color: #302f2f;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+hr {
+  border-top: solid 1px #ffeaea;
+  margin-left: 40px;
+  margin-top: 0;
+}
+
+.get-app {
+  padding-left: 40px;
+}
+
+.get-app-title {
+  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.22px;
+  color: #302f2f;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 22px;
+}
+
+.get-app-icon {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.get-app-icon .fab {
+  font-size: 25px;
+  margin-right: 32px;
+  text-align: center;
+}
+
+.get-app-icon .fab:last-child {
+  margin-right: 0;
+}
+
+.get-app-icon .fa-android {
+  font-size: 28px;
 }
